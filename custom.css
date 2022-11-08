@@ -141,7 +141,7 @@ body {
 }
 
 /* Highlight rating */
-.list-block .list-table-data .data.score > a {
+.list-block .list-table-data .data.score > a > span {
   border: 1px;
   background-color: var(--lightbg);
   border-radius: 5px;
