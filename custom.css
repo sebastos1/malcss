@@ -9,7 +9,6 @@ body {
 }
 
 img[id='cover-image'],
-div[id='footer-block'],
 div[id='status-menu'],
 .list-status-title,
 span[class='text'],
@@ -25,7 +24,9 @@ span[class='text'],
 .list-block .header-title.progress,
 #list-container > div.list-block > div > table > tbody:nth-child(1) > tr,
 .list-block .list-table-data .data.title.clearfix .icon-watch2,
-.header .header-title
+.header .header-title,
+#footer-block #recaptcha-terms,
+#footer-block #copyright
 {
   display: none;
 }
@@ -89,5 +90,10 @@ span[class='text'],
 }
 
 .header {
+  height: 25px;
+}
+
+#footer-block {
+  background-color: var(--bg);
   height: 25px;
 }
