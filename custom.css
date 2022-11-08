@@ -20,25 +20,35 @@ body {
 .list-table .list-table-data .data a { color: var(--text) !important; }
 .list-table .list-table-data .data a:hover { color: var(--text-hover) !important; }
 
+
 /* .list-menu-float, */
+/* Header */
+.header .header-title,
 .cover-image,
-.list-container .status-menu,
+/* Status menu (watching, completed, etc.) */
 .status-menu-container,
-.list-status-title,
-.list-unit .list-status-title,
 .status-menu-container.fixed,
-#gdpr-modal-bottom,
+/* Stats/filter + indicator of filter */
+.list-unit .list-status-title,
+/* Table header */
+.list-block tbody:nth-child(1),
+/* Table columns: type */
 .list-table .list-table-data .data.type,
 .list-block .header-title.type,
+/* tags */
 .list-table .list-table-data .data.tags,
 .list-block .header-title.tags,
+/* progress */
 .list-table .list-table-data .data.progress,
 .list-block .header-title.progress,
-.list-block tbody:nth-child(1),
+/* Episode icon thing */
 .list-block .list-table-data .data.title.clearfix .icon-watch2,
-.header .header-title,
+/* Cookies popup */
+#gdpr-modal-bottom,
+/* Footer shit */
 #footer-block #recaptcha-terms,
 #footer-block #copyright,
+/* Invisible score when "-" */
 .list-block .list-table-data .data.score .link .score-label.score-na {
     display: none;
 }
