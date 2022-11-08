@@ -1,24 +1,26 @@
 :root {
---bg: #1d1d1d;
---bg2: #272727;
---lightbg: #383838;
---text: #ff6d6d;
---text-hover: #ff0606;
---thumb: #0a0a0a;
---border: var(--thumb);
+  --bg: #1d1d1d;
+  --bg2: #272727;
+  --lightbg: #383838;
+  --text: #ff6d6d;
+  --text-hover: #ff0606;
+  --thumb: #0a0a0a;
+  --border: var(--bg);
 
---watching: #efff73;
---completed: #4aff9e;
---onhold: #3d3d3d;
---dropped: #fa5a5a;
---planned: #5cfff7;
+  --watching: #efff73;
+  --completed: #4aff9e;
+  --onhold: #3d3d3d;
+  --dropped: #fa5a5a;
+  --planned: #5cfff7;
+
+
 }
 
 body {
-font-family: “Andale Mono”, AndaleMono, monospace;
-font-size: 120%;
-background-color: var(--bg) !important;
-background-image: none !important;
+  font-family: “Andale Mono”, AndaleMono, monospace;
+  font-size: 120%;
+  background-color: var(--bg) !important;
+  background-image: none !important;
 }
 
 /* .list-menu-float, */
@@ -48,220 +50,253 @@ background-image: none !important;
 .list-block .list-table-data .data.score .link .score-label.score-na,
 /* Status tab */
 #list-container .list-block .list-status-title .text,
-#search-button > i {
-display: none;
+#search-button>i {
+  display: none;
 }
 
 /* COLORS */
 .list-table .list-table-data .data.status.watching {
-background-color: var(--watching);
+  background-color: var(--watching);
 }
+
 .list-table .list-table-data .data.status.completed {
-background-color: var(--completed);
+  background-color: var(--completed);
 }
+
 .list-table .list-table-data .data.status.onhold {
-background-color: var(--onhold);
+  background-color: var(--onhold);
 }
+
 .list-table .list-table-data .data.status.dropped {
-background-color: var(--dropped);
+  background-color: var(--dropped);
 }
+
 .list-table .list-table-data .data.status.plantowatch {
-background-color: var(--planned);
+  background-color: var(--planned);
 }
+
 .list-table .list-table-data .data a {
-color: var(--text) !important;
+  color: var(--text) !important;
 }
+
 .data.number {
-color: var(--text);
+  color: var(--text);
 }
+
 .list-table .list-table-data .data a:hover {
-color: var(--text-hover) !important;
-text-decoration: none;
+  color: var(--text-hover) !important;
+  text-decoration: none;
 }
+
 #status-menu div,
 #list-container .list-block .list-status-title,
 #list-container .list-block .list-stats,
 #status-menu {
-background-color: var(--bg2);
-color: var(--text);
-border: 0px;
+  background-color: var(--bg2);
+  color: var(--text);
+  border: 0px;
 }
 
 /* Table */
 .list-table .list-table-data .data.status {
-width: 3%;
+  width: 3%;
 }
+
 .list-table .list-table-data .data.number {
-width: 3%;
-padding-left: 15px;
+  width: 3%;
+  padding-left: 15px;
 }
+
 #list-container .list-block .list-table-data>* {
-border: 0px;
+  border: 0px;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-height: 10px;
-width: 10px;
-background-color: var(--bg);
+  height: 10px;
+  width: 10px;
+  background-color: var(--bg);
 }
 
 ::-webkit-scrollbar-track {
-background: var(--bg);
-border-radius: 6px;
+  background: var(--bg);
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--thumb);
-border-radius: 6px;
+  background: var(--thumb);
+  border-radius: 6px;
 }
 
 /* Add/edit - more */
 .list-block .list-table-data .data.title.clearfix .add-edit-more .edit,
 .list-block .list-table-data .data.title.clearfix .add-edit-more .add {
-font-size: 15px;
-margin: 5px;
+  font-size: 15px;
+  margin: 5px;
 }
+
 .list-block .list-table-data .data.title.clearfix .add-edit-more {
-font-size: 0px;
+  font-size: 0px;
 }
 
 /* Header, footer */
 .header>* {
-display: none;
+  display: none;
 }
+
 .header {
-height: 25px;
+  height: 25px;
 }
+
 #footer-block {
-background-color: var(--bg);
-height: 15px;
+  background-color: var(--bg);
+  height: 15px;
 }
 
 /* Table borders + color */
 .list-container,
 .list-item .list-table-data {
-background-color: var(--bg2);
-border: var(--border) 1px solid;
-border-radius: 15px;
+  background-color: var(--bg2);
+  border: var(--border) 1px solid;
+  border-radius: 15px;
 }
+
 .list-table,
 .list-block .list-table-data {
-border: 0px;
+  border: 0px;
 }
+
 .list-table .list-table-data .data.image .image {
-border: var(--border) 1px solid;
+  border: var(--border) 1px solid;
 }
 
 /* Bar rounding */
 .list-block tbody:nth-child(2) .list-table-data .data.status {
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border: 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px;
 }
+
 .list-block tbody:last-child .list-table-data .data.status {
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-border: 1px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px;
 }
 
 /* Highlight rating */
 .list-block .list-table-data .data.score>a>span {
-border: 1px;
-background-color: var(--lightbg);
-border-radius: 5px;
-padding: 10px;
+  border: 1px;
+  background-color: var(--lightbg);
+  border-radius: 5px;
+  padding: 10px;
 }
+
 
 /* Status menu (watching, completed, etc.) */
 #status-menu {
-border: var(--border) 0px solid;
-border-radius: 15px;
+  border: var(--border) 0px solid;
+  border-radius: 15px;
 }
+
 #status-menu>div {
-width: 95%;
-right: 10%;
-border-spacing: 0px 0;
+  width: 95%;
+  right: 10%;
+  border-spacing: 0px 0;
 }
+
 #status-menu>div>a {
-color: var(--text);
-font-size: 100%;
-padding: 15px 18px 15px;
-font: inherit;
+  color: var(--text);
+  font-size: 100%;
+  padding: 15px 18px 15px;
+  font: inherit;
 }
+
 #status-menu>div>*:after {
-background-color: var(--text);
+  background-color: var(--text);
 }
 
 /* Stats container */
 #list-container .list-block .list-status-title .stats {
-right: 40%;
-font-size: 16px;
+  right: 40%;
+  font-size: 16px;
 }
+
 #list-container .list-block .list-stats {
-padding-bottom: 0px;
-border: var(--bg) 1px solid;
-border-radius: 15px;
-background-color: var(--bg);
+  padding-bottom: 0px;
+  border: var(--bg) 1px solid;
+  border-radius: 15px;
+  background-color: var(--bg);
 }
+
 #list-container .list-block table {
-margin-top: 10px;
+  margin-top: 10px;
 }
+
 #list-container .list-block tbody:nth-child(even) .list-table-data {
-background-color: var(--bg);
-border: var(--bg) 0px solid;
-border-radius: 15px;
+  background-color: var(--bg);
+  border: var(--bg) 0px solid;
+  border-radius: 15px;
 }
+
 /* Advanced options */
 #show-stats-button,
 #advanced-options-button {
-color: var(--text);
+  color: var(--text);
 }
+
 #advanced-options .advanced-options-button .btn-apply,
 #advanced-options .advanced-options-button .btn-clear {
-background-color: var(--bg2);
-color: var(--text);
+  background-color: var(--bg2);
+  color: var(--text);
 }
+
 #advanced-options {
-border: 0px;
-border-radius: 15px;
-font: inherit;
-background-color: var(--bg);
+  border: 0px;
+  border-radius: 15px;
+  font: inherit;
+  background-color: var(--bg);
 }
+
 #advanced-options>* {
-font: inherit;
-color: var(--text);
+  font: inherit;
+  color: var(--text);
 }
+
 #advanced-options .filter .widget-header,
 #advanced-options .sort .widget-header {
-font: inherit;
-font-size: 80%;
+  font: inherit;
+  font-size: 80%;
 }
-#advanced-options .sort > h2,
-#advanced-options > div.filter > h2{
-border-bottom: var(--border) 1px solid;
+
+#advanced-options .sort>h2,
+#advanced-options>div.filter>h2 {
+  border-bottom: var(--border) 1px solid;
+  font-size: 150%;
 }
+
 #advanced-options .sort .sort-widget.second,
 #advanced-options .advanced-options-button {
-border: 0px;
+  border: 0px;
 }
+
 #advanced-options .filter .filter-widget input,
 #advanced-options .filter .filter-widget select,
 #advanced-options .sort .sort-widget select,
 #advanced-options .sort div.sort-widget.first label,
 #advanced-options .sort div.sort-widget.first label:nth-child(4),
 #advanced-options .sort div.sort-widget.second label:nth-child(4),
-#advanced-options .sort div.sort-widget.second label:nth-child(6)
-{
-border: var(--bg2) 1px solid;
-border-radius: 5px;
-background-color: var(--bg2);
-color: var(--text);
+#advanced-options .sort div.sort-widget.second label:nth-child(6) {
+  border: var(--bg2) 1px solid;
+  border-radius: 5px;
+  background-color: var(--bg2);
+  color: var(--text);
 }
+
 #advanced-options .filter .filter-widget.airing-status,
-#advanced-options .sort .sort-widget.first{
-padding-bottom: 35px;
+#advanced-options .sort .sort-widget.first {
+  padding-bottom: 35px;
 }
+
 /* Hide unneccessary options */
 #advanced-options .filter .filter-widget.producer,
 #advanced-options .filter .filter-widget.aired-date,
@@ -269,7 +304,6 @@ padding-bottom: 35px;
 #advanced-options .sort .sort-widget.second,
 #advanced-options .sort .sort-widget.first span,
 #advanced-options .filter span,
-#advanced-options .sort span
-{
-display: none;
+#advanced-options .sort span {
+  display: none;
 }
