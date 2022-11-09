@@ -94,7 +94,7 @@ body {
 #status-menu {
   background-color: var(--bg2);
   color: var(--text);
-  border: 0px;
+  border: var(--border) 1px solid;
 }
 
 /* Table */
@@ -105,6 +105,7 @@ body {
 .list-table .list-table-data .data.number {
   width: 3%;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 #list-container .list-block .list-table-data>* {
