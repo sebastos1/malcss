@@ -353,7 +353,7 @@ a,
   background-color: var(--bg2);
   border-top-right-radius: var(--rounding);
   border-bottom-right-radius: var(--rounding);
-  border: var(--border) 1px solid;
+  border: var(--border) 0px solid;
 }
 
 .list-menu-float>div {
@@ -419,4 +419,9 @@ a,
   background-color: var(--bg2);
   border: 0px;
   color: var(--text);
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting:hover,
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting:hover {
+  color: var(--hover);
 }
