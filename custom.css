@@ -7,11 +7,11 @@
   --hover: #f83b3b;
   --border: var(--bg2);
   --grayed: #505050;
-  --watching: #efff73;
-  --completed: #4aff9e;
-  --onhold: #3d3d3d;
-  --dropped: #fa5a5a;
-  --planned: #5cfff7;
+  --watching: #a8ff96;
+  --completed: #82eaff;
+  --onhold: #ffdd6e;
+  --dropped: #ff6e6e;
+  --planned: #b3b3b3;
 
   --rounding: 15px;
 }
